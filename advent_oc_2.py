@@ -1,10 +1,10 @@
 import time
 
-'''start = time.time()
+start = time.time()
 with open("day2.txt", "r") as meow:
     nyan = meow.readlines()
 
-def nyanify(elf, kiri):
+def jankenPON(elf, kiri):
     points_ftw = 0
     
     match elf:
@@ -37,18 +37,19 @@ def nyanify(elf, kiri):
 
 suisei = []
 for cats in nyan:
-    suisei.append(nyanify(cats[0], cats[2]))
+    suisei.append(jankenPON(cats[0], cats[2]))
 
 print(sum(suisei))
 stop = time.time()
-print(stop - start)'''
+print(stop - start)
 
+#part 2
 
 start = time.time()
 with open("day2.txt", "r") as meow:
     nyan = meow.readlines()
 
-def nyanify(elf, kiri):
+def jankenPON(elf, kiri):
     points_ftw = 0
     
     match elf:
@@ -81,7 +82,7 @@ def nyanify(elf, kiri):
 
 suisei = []
 for cats in nyan:
-    suisei.append(nyanify(cats[0], cats[2]))
+    suisei.append(jankenPON(cats[0], cats[2]))
 
 print(sum(suisei))
 stop = time.time()

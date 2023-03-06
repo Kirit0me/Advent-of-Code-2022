@@ -3,12 +3,12 @@ import string
 
 start = time.time()
 
-with open("day3.txt", "r") as meow:
+with open("advent3.txt", "r") as meow:
     nyan = meow.readlines()
 
 suisei = 0
 #part 1
-'''for word in nyan:
+for word in nyan:
     mid = int(len(word)/2)
 
     a, b = word[mid:], word[:mid]
@@ -18,7 +18,8 @@ suisei = 0
                 suisei += ord(common_sense) - ord("a") + 1
             else:
                 suisei += ord(common_sense) - ord("A") + 27
-            break'''
+            break
+print(suisei)
 #part2
 sike = 0
 for sike in range(0, int(len(nyan)/3)):
